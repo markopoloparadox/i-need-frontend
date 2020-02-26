@@ -1,0 +1,15 @@
+body {
+    margin: 0px;
+}
+
+.frontPageImage {
+    background-image: url(/imago.jpg);
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    /* Center and scale the image nicely */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

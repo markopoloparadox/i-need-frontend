@@ -1,7 +1,4 @@
-"use strict";
-
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 class PersonForm extends React.Component {
     state = { name: "", surname: "", birthDate: "", biography: "" };
@@ -72,29 +69,31 @@ class PersonForm extends React.Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
-                <label>
-                    Ime:
+            <div>
+                 <form onSubmit={this.handleSubmit}>
+                    <label>
+                        Ime:
                     <input type="text" value={this.state.name} onChange={this.handleName} />
-                </label>
-                <br />
-                <label >
-                    Prezime:
+                    </label>
+                    <br />
+                    <label >
+                        Prezime:
                     <input type="text" value={this.state.surname} onChange={this.handleSurname} />
-                </label>
-                <br />
-                <label >
-                    Datum rođenja:
+                    </label>
+                    <br />
+                    <label >
+                        Datum rođenja:
                     <input type="date" value={this.state.birthDate} onChange={this.handleBirthDate} />
-                </label>
-                <br />
-                <label >
-                    Biografija:
+                    </label>
+                    <br />
+                    <label >
+                        Biografija:
                     <input type="text" value={this.state.biography} onChange={this.handleBiography} />
-                </label>
+                    </label>
 
-                <input type="submit" value="Submit" />
-            </form>
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
         )
     }
 }

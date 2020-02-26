@@ -3,12 +3,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import PersonForm from "./components/personform"
+import DisplayPage from "./components/display-page"
 
 const name = 'Josh Perez';
 const element = <h1>Hello, {name}</h1>;
 
 
-ReactDOM.render(<PersonForm />, document.getElementById('root'));
+ReactDOM.render(<DisplayPage />, document.getElementById('root'));
 
 /* function tick() {
     const element = (
