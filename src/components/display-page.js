@@ -1,4 +1,6 @@
 import React from 'react';
+import JobsList from "./jobs-list"
+
 import "../styles/display-page.css"
 
 class DisplayPage extends React.Component {
@@ -10,18 +12,10 @@ class DisplayPage extends React.Component {
         return (
             <div className="section">
                 <div className="centerText">
-                    <div>
-                        <h1><span> Ja Trebam... </span></h1>
+                    <div className="logoText">
+                        <h1><span className="logoTextOutline"> Treba mi... </span></h1>
                     </div>
-
-                    <div className="jobs">
-                        <h2>Fizera</h2>
-                        <h2>Automehanicara</h2>
-                        <h2>Zidara</h2>
-                        <h2>Vodoinstalera</h2>
-                        <h2>Brava</h2>
-                        <p>Hello</p>
-                    </div>
+                    <JobsList/>
                 </div>
                 <div className="video">
                     <video autoPlay loop muted>

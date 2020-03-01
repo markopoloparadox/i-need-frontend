@@ -1,0 +1,12 @@
+.leaflet-container {
+	width: 75%;
+	height: 100vh;
+}
+
+body {
+	margin: 0px;
+}
+
+.divTest {
+	display: flex;
+}
