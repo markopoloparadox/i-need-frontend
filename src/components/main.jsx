@@ -2,7 +2,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom"
 import { FrontPage } from "./frontPage/frontPage.jsx";
-import { JobPage } from "./job-page.js";
+import { BackPage } from "./backPage/backPage.jsx";
 
 // Defintion
 class Main extends React.Component {
@@ -11,7 +11,7 @@ class Main extends React.Component {
             <BrowserRouter>
                 <Switch>
                     <Route path="/" exact component={FrontPage} />
-                    <Route path="/map/:id" exact component={JobPage} />
+                    <Route path="/map/:id" exact component={BackPage} />
                 </Switch>
             </BrowserRouter>
         )
